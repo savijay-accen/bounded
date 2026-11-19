@@ -1,0 +1,32 @@
+{
+  "pullRequest": {
+    "owner": "octocat",
+    "repo": "Hello-World",
+    "number": 1
+  },
+  "fileReviews": [],
+  "summary": {
+    "totalFiles": 0,
+    "overallScore": 0,
+    "criticalIssues": 0,
+    "highPriorityTests": 0,
+    "refactoringOpportunities": 0
+  },
+  "recommendations": [
+    {
+      "priority": "critical",
+      "category": "analysis-setup",
+      "description": "Cannot complete code review - GitHub API access is restricted in this environment. The pull request details, changed files, and code diffs are required to run the specialized analysis agents (code-quality-analyzer, test-coverage-analyzer, refactoring-suggester). Please provide PR details including: file changes, code diffs, and repository context.",
+      "files": []
+    }
+  ],
+  "metadata": {
+    "analyzedAt": "2026-11-17T00:00:00Z",
+    "duration": 0,
+    "agentVersions": {
+      "code-quality-analyzer": "unknown",
+      "test-coverage-analyzer": "unknown",
+      "refactoring-suggester": "unknown"
+    }
+  }
+}

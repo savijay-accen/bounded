@@ -24,6 +24,13 @@ async function main(): Promise<void> {
     return;
   }
 
+  // Validate GitHub token
+  if (!process.env.GITHUB_TOKEN) {
+    console.error('Error: GITHUB_TOKEN is required.');
+    process.exitCode = 1;
+    return;
+  }
+
   // 2. Validate authentication
   const hasAnthropicKey = Boolean(process.env.ANTHROPIC_API_KEY);
   const hasAwsCredentials = Boolean(
